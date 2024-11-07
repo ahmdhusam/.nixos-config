@@ -25,6 +25,7 @@
     lsof
     xclip # used by zsh-system-clipboard.
     xz
+    strace
 
     # ntfs
     ntfs3g
