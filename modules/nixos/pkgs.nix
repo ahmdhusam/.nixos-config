@@ -117,6 +117,7 @@
     makeWrapper
     pkg-config
 
+    gnome.geary
     # gnomeExtensions
     gnome.gnome-tweaks
 

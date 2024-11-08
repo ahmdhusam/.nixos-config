@@ -41,6 +41,8 @@
       # # missed
       # fabiospampinato.vscode-todo-plus
       # rangav.vscode-thunder-client
+      # hediet.debug-visualizer
+      # pnp.polacode
     ];
 
     userSettings = {
