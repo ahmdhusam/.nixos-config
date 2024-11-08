@@ -41,7 +41,7 @@
   # Add ~/.local/bin to PATH
   environment.localBinInPath = true;
 
-  services.journald.extraConfig = "SystemMaxUse=50M\nSystemMaxFiles=5";
+  services.journald.extraConfig = "Storage=volatile\nRuntimeMaxUse=64M\nSystemMaxUse=64M\nSystemMaxFiles=5";
   services.journald.rateLimitBurst = 500;
   services.journald.rateLimitInterval = "120s";
 
