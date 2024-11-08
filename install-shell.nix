@@ -10,5 +10,9 @@
       git
       neovim
     ];
+
+  shellHook = ''
+    echo "Run \"sudo nixos-rebuild switch --flake .#nixos\""
+  '';
   };
 }
