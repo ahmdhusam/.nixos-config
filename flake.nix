@@ -3,10 +3,10 @@
 
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-24.05";
-    # auto-cpufreq = {
-    #   url = "github:AdnanHodzic/auto-cpufreq";
-    #   inputs.nixpkgs.follows = "nixpkgs";
-    # };
+    auto-cpufreq = {
+      url = "github:AdnanHodzic/auto-cpufreq";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
 
     home-manager = {
       url = "github:nix-community/home-manager/release-24.05";
@@ -54,14 +54,13 @@
 
           modules = [
             ./hosts/laptop/configuration.nix
-            # inputs.auto-cpufreq.nixosModules.default
+            inputs.auto-cpufreq.nixosModules.default
             # inputs.home-manager.nixosModules.default
             home-manager.nixosModules.home-manager
             {
               home-manager.useGlobalPkgs = true;
               home-manager.useUserPackages = true;
 
-              # TODO replace ryan with your own username
               home-manager.users.${rootUser} = import ./hosts/laptop/home.nix;
               home-manager.extraSpecialArgs = {
                 inherit nixosVersion rootUser;

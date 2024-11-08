@@ -6,23 +6,24 @@
     # Better scheduling for CPU cycles - thanks System76!!!
     system76-scheduler.settings.cfsProfiles.enable = true;
 
-    # # default performance balance_performance balance_power power 
-    # auto-cpufreq = {
-    #   enable = true;
-    #   settings = {
-    #     battery = {
-    #       # performance, powersave
+    # default performance balance_performance balance_power power 
+    auto-cpufreq = {
+      enable = true;
+      settings = {
+        battery = {
+          # performance, powersave
 
-    #       governor = "powersave";
-    #       turbo = "never";
-    #     };
-    #     charger = {
-    #       # performance, powersave
-    #       governor = "powersave";
-    #       turbo = "never";
-    #     };
-    #   };
-    # };
+          governor = "powersave";
+          turbo = "never";
+        };
+        charger = {
+          # performance, powersave
+      
+          governor = "powersave";
+          turbo = "never";
+        };
+      };
+    };
 
     # battery
     upower = {
@@ -40,11 +41,10 @@
   powerManagement = {
     enable = true;
     # cpuFreqGovernor = "powersave";
+    # cpufreq.max = 800000;
     powertop.enable = true;
-
   };
 
-  # powerManagement.cpufreq.max = 800000;
 
   services.tlp = {
     enable = true;

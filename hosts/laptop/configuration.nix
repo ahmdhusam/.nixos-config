@@ -16,6 +16,7 @@
   imports = [
     # Include the results of the hardware scan.
     ./hardware-configuration.nix
+    inputs.auto-cpufreq.nixosModules.default
     # leave it to make it like an example for passing params when importing.
     # (import ../../modules { pkgs = pkgs; })
     ../../modules
