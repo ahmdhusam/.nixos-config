@@ -8,7 +8,7 @@
 
     shellAliases =
       let
-        flakeDir = "~/Desktop/nixos-config/";
+        flakeDir = "~/.nixos-config/";
       in
       {
         gll = "ls -l";

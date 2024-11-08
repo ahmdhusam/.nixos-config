@@ -21,8 +21,8 @@ Before you begin, ensure you have the following installed:
 1. Clone this repository to your local machine:
 
    ```bash
-   git clone https://github.com/ahmdhusam/nixos-config.git
-   cd nixos-config
+   git clone https://github.com/ahmdhusam/.nixos-config.git
+   cd .nixos-config
    ```
 
 2. Build and switch to the new configuration:

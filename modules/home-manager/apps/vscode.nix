@@ -31,10 +31,10 @@
 
             # "enable" = true;
             "nixos" = {
-              "expr" = "(builtins.getFlake \"/home/${rootUser}/Desktop/nixos-config/\").nixosConfigurations.CONFIGNAME.options";
+              "expr" = "(builtins.getFlake \"/home/${rootUser}/.nixos-config/\").nixosConfigurations.CONFIGNAME.options";
             };
             "home_manager" = {
-              "expr" = "(builtins.getFlake \"/home/${rootUser}/Desktop/nixos-config/\").homeConfigurations.CONFIGNAME.options";
+              "expr" = "(builtins.getFlake \"/home/${rootUser}/.nixos-config/\").homeConfigurations.CONFIGNAME.options";
             };
           };
           # "options" = {
