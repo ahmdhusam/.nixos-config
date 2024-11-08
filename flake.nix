@@ -68,6 +68,14 @@
               };
             }
 
+            # We expose some extra arguments so that our modules can parameterize
+            # better based on these values.
+            {
+              config.global = {
+                inherit system nixosVersion rootUser;
+              };
+            }
+
           ];
         };
 
