@@ -122,6 +122,9 @@
 
     gnomeExtensions.blur-my-shell
     gnomeExtensions.vitals
+    gnomeExtensions.cpufreq
+    gnomeExtensions.status-area-horizontal-spacing
+    gnomeExtensions.clipboard-indicator
   ];
 
 }
