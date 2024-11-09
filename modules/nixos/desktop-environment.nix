@@ -11,4 +11,8 @@
 
   # Enable touchpad support (enabled default in most desktopManager).
   # services.xserver.libinput.enable = true;
+
+  # enable Ozone Wayland support in Chromium and Electron based applications
+  # This allows these applications to run without Xwayland.
+  environment.sessionVariables.NIXOS_OZONE_WL = "1";
 }
