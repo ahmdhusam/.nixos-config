@@ -8,6 +8,6 @@
     ./bottom.nix
     ./btop.nix
     ./neofetch.nix
-
+    ./browsers-profile-sync.nix
   ];
 }

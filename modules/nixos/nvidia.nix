@@ -6,6 +6,10 @@
     enable = true;
   };
 
+  # when you run a container that you want to have the GPU pass-through
+  # you will need to use --device=nvidia.com/gpu=all since gpu=all does not work on NixOS.
+  hardware.nvidia-container-toolkit.enable = true;
+
   # Load nvidia driver for Xorg and Wayland
   services.xserver.videoDrivers = [ "nvidia" ];
 

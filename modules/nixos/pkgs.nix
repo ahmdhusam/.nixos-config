@@ -27,12 +27,41 @@
     xz
     strace
 
+    # Command Line
+    cowsay
+    killall
+    libnotify
+    timer
+    gnugrep
+    bat # cat clone.
+    eza # ls clone.
+    fd # A simple, fast and user-friendly alternative to find.
+    bottom # A cross-platform graphical process/system monitor with a customizable interface. usage ?> btm
+    ripgrep # grep clone.
+    w3m # A text-mode web browser.
+    hwinfo # Hardware detection tool.
+    pciutils # A collection of programs for inspecting and manipulating configuration of PCI devices.
+    numbat # High precision scientific calculator with full support for physical units.
+    nvtopPackages.full
+    bat-extras.batman
+    profile-sync-daemon
+    smartmontools
+    pv
+    lm_sensors
+    curl
+    fnm # Fast and simple Node.js version manager
+    toybox # Lightweight implementation of some Unix command line utilities
+    busybox # Tiny versions of common UNIX utilities in a single small executable
+    e2fsprogs # Tools for creating and checking ext2/ext3/ext4 filesystems
+    pciutils # A collection of programs for inspecting and manipulating configuration of PCI devices
+
     # ntfs
     ntfs3g
 
     # docker
     docker
     docker-compose
+    nvidia-container-toolkit
 
     # nix utils
     nix-index # A files database for nixpkgs.
@@ -57,24 +86,6 @@
     man-pages
     valgrind # c memory analyzer
     gdb
-
-    # Command Line
-    cowsay
-    killall
-    libnotify
-    timer
-    gnugrep
-    bat # cat clone.
-    eza # ls clone.
-    fd # A simple, fast and user-friendly alternative to find.
-    bottom # A cross-platform graphical process/system monitor with a customizable interface. usage ?> btm
-    ripgrep # grep clone.
-    w3m # A text-mode web browser.
-    hwinfo # Hardware detection tool.
-    pciutils # A collection of programs for inspecting and manipulating configuration of PCI devices.
-    numbat # High precision scientific calculator with full support for physical units.
-    nvtopPackages.full
-    bat-extras.batman
 
     # Official Linux Bluetooth protocol stac
     #  bluez
