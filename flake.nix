@@ -94,6 +94,7 @@
 
       # access it with "nix develop" command
       devShells.${system}.default = import ./shell.nix { inherit pkgs; };
+      devShells.${system}.development = import ./shell-dev.nix { inherit pkgs; };
 
       # homeConfigurations = {
 
