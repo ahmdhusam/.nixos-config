@@ -18,6 +18,8 @@ in
       libxcrypt
       gdb
       clang-tools
+      linuxPackages_latest.perf
+      rustPlatform.bindgenHook
     ]
     ++ pkgs.linux.nativeBuildInputs);
 }).env

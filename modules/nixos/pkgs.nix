@@ -54,6 +54,7 @@
     busybox # Tiny versions of common UNIX utilities in a single small executable
     e2fsprogs # Tools for creating and checking ext2/ext3/ext4 filesystems
     pciutils # A collection of programs for inspecting and manipulating configuration of PCI devices
+    fuse
 
     # ntfs
     ntfs3g
@@ -75,6 +76,7 @@
 
     # build-essential
     gcc
+    libgcc
     gnumake
     cmake
     autoconf
@@ -86,6 +88,23 @@
     man-pages
     valgrind # c memory analyzer
     gdb
+    pkg-config
+    grub2
+    musl
+    clang-tools
+    zls
+    zig
+    file
+    libxcrypt
+    lld
+    llvm
+    libllvm
+    clang
+    rustc
+    cargo
+    rustup
+    rust-analyzer
+    
 
     # Official Linux Bluetooth protocol stac
     #  bluez
@@ -110,6 +129,15 @@
 
     # Development.
     nodejs
+    nodePackages.pnpm
+    nodePackages.yarn
+    nest-cli
+    nodePackages.typescript-language-server
+    vscode-langservers-extracted
+    nodePackages.prisma
+    nodePackages.prettier
+    nodePackages.jshint
+    jq # A lightweight and flexible command-line JSON processor
 
     # Xorg stuff
     #xterm
@@ -137,6 +165,9 @@
     gnomeExtensions.cpufreq
     gnomeExtensions.status-area-horizontal-spacing
     gnomeExtensions.clipboard-indicator
+
+    # others
+    gnupg
   ];
 
 }

@@ -13,6 +13,8 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
+    zig.url = "github:mitchellh/zig-overlay";
+
   };
 
   outputs =
@@ -53,9 +55,14 @@
           inherit system;
 
           modules = [
+            { nixpkgs.overlays =  [ inputs.zig.overlays.default ]; }
+
             ./hosts/laptop/configuration.nix
+            
             inputs.auto-cpufreq.nixosModules.default
+            
             # inputs.home-manager.nixosModules.default
+            
             home-manager.nixosModules.home-manager
             {
               home-manager.useGlobalPkgs = true;
