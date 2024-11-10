@@ -55,14 +55,14 @@
           inherit system;
 
           modules = [
-            { nixpkgs.overlays =  [ inputs.zig.overlays.default ]; }
+            { nixpkgs.overlays = [ inputs.zig.overlays.default ]; }
 
             ./hosts/laptop/configuration.nix
-            
+
             inputs.auto-cpufreq.nixosModules.default
-            
+
             # inputs.home-manager.nixosModules.default
-            
+
             home-manager.nixosModules.home-manager
             {
               home-manager.useGlobalPkgs = true;
@@ -77,7 +77,7 @@
             # We expose some extra arguments so that our modules can parameterize
             # better based on these values.
             {
-              config.global = {
+              config._module.args = {
                 inherit system nixosVersion rootUser;
               };
             }

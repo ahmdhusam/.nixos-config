@@ -32,8 +32,9 @@ in
           isNormalUser = true;
           description = "${cfg.userName}";
           home = "/home/${cfg.userName}";
-          hashedPassword = "$6$SxtdwjPfPb8e6xqt$llLQP3l9IfguG76I8s6h1KpMI9hBiGK.DIAKADK0S/Ein9tZqdWt.O96BA0KlijUOwgzCwTAQC1tEgBr0xWLW1";
-          initialHashedPassword = "$6$SxtdwjPfPb8e6xqt$llLQP3l9IfguG76I8s6h1KpMI9hBiGK.DIAKADK0S/Ein9tZqdWt.O96BA0KlijUOwgzCwTAQC1tEgBr0xWLW1";
+          # mkpasswd -m sha-512
+          hashedPassword = "$6$ucPlpykBTHkyzcna$iKebHVjBWwF7YV9tDz/JzpTumiSOgNNTCWJK69oQNHdNpJU4DEJvUNOu7sD2M.Sn9QqMK0CUoLCFttif7ZWrp/";
+          initialHashedPassword = "$6$ucPlpykBTHkyzcna$iKebHVjBWwF7YV9tDz/JzpTumiSOgNNTCWJK69oQNHdNpJU4DEJvUNOu7sD2M.Sn9QqMK0CUoLCFttif7ZWrp/";
           extraGroups = [
             "networkmanager"
             "wheel"

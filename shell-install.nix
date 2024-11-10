@@ -11,8 +11,8 @@
       neovim
     ];
 
-  shellHook = ''
-    echo "Run \"sudo nixos-rebuild switch --flake .#nixos\""
-  '';
+    shellHook = ''
+      echo "Run \"sudo nixos-rebuild switch --flake .#nixos\""
+    '';
   };
 }

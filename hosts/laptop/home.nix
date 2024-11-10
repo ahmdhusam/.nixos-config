@@ -22,7 +22,7 @@
   # want to update the value, then make sure to first check the Home Manager
   # release notes.
   home.stateVersion = nixosVersion; # Please read the comment before changing.
-  
+
   programs.direnv.enable = true;
   programs.direnv.enableZshIntegration = true;
   programs.direnv.nix-direnv.enable = true;
@@ -82,7 +82,7 @@
     # # the Nix store. Activating the configuration will then make '~/.screenrc' a
     # # symlink to the Nix store copy.
     # ".screenrc".source = dotfiles/screenrc;
-    
+
     # # You can also set the file content immediately.
     # ".gradle/gradle.properties".text = ''
     #   org.gradle.console=verbose

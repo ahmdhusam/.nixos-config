@@ -48,12 +48,12 @@
 
         download-ls = "download-ls(){ wget -t 5 -c -T 5 -w 3 --content-disposition --trust-server-names -i $1 };download-ls ";
 
-        du = "du -sh ";
-        df-h = "df -hT";
+        du = "du";
+        df-h = "df -h";
 
         # TODO: Edit config path
         run-torrent = "sudo docker run --rm --env HTTP_PROXY=\"http://192.168.1.11:8082\" --env HTTPS_PROXY=\"http://192.168.1.11:8082\" -d --name=qbittorrent -e PUID=1000 -e PGID=1000 -e TZ=Etc/UTC -e WEBUI_PORT=8080 -e TORRENTING_PORT=6881 -p 8080:8080 -p 6881:6881 -p 6881:6881/udp -v ./config:/config -v ~/Downloads/torrent:/downloads lscr.io/linuxserver/qbittorrent";
-        
+
         ext4-features = "ext4-features(){ tune2fs -l $1 | grep features } ; ext4-features"; # sudo tune2fs -l /dev/sda2
         disable-ext4-journaling = "disable-ext4-journaling(){ umount $1 && tune2fs -O ^has_journal $1 } ; disable-ext4-journaling"; # sudo tune2fs -l /dev/sda2
       };

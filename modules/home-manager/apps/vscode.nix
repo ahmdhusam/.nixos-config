@@ -13,10 +13,10 @@
       # database
       cweijan.dbclient-jdbc
       cweijan.vscode-database-client2
-      
+
       # ziglang
       ziglang.vscode-zig
-      
+
       # c/c++
       ms-vscode.cmake-tools
       ms-vscode.cpptools
@@ -29,14 +29,13 @@
       # nix
       jnoortheen.nix-ide
       arrterian.nix-env-selector
-      
+
       # others
       eamodio.gitlens
       gruntfuggly.todo-tree
       hediet.vscode-drawio
       humao.rest-client
       usernamehw.errorlens
-
 
       # # missed
       # fabiospampinato.vscode-todo-plus
@@ -48,13 +47,12 @@
     userSettings = {
       "editor.formatOnSave" = true;
 
-      "workbench.iconTheme" =  "material-icon-theme";
-      "editor.defaultFormatter" =  "esbenp.prettier-vscode";
-      "editor.formatOnSave" =  true;
-      "conventionalCommits.showNewVersionNotes" =  false;
-      "continue.enableTabAutocomplete" =  false;
-      "zig.initialSetupDone" =  false;
-      
+      "workbench.iconTheme" = "material-icon-theme";
+      "editor.defaultFormatter" = "esbenp.prettier-vscode";
+      "conventionalCommits.showNewVersionNotes" = false;
+      "continue.enableTabAutocomplete" = false;
+      "zig.initialSetupDone" = false;
+
       #### NixIDE
       "nix.enableLanguageServer" = true;
       "nix.serverPath" = "nixd";

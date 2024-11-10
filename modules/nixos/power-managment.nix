@@ -18,7 +18,7 @@
         };
         charger = {
           # performance, powersave
-      
+
           governor = "powersave";
           turbo = "never";
         };
@@ -44,7 +44,6 @@
     # cpufreq.max = 800000;
     powertop.enable = true;
   };
-
 
   services.tlp = {
     enable = true;

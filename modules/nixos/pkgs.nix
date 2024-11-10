@@ -104,7 +104,6 @@
     cargo
     rustup
     rust-analyzer
-    
 
     # Official Linux Bluetooth protocol stac
     #  bluez
