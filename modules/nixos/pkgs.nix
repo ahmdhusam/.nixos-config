@@ -164,6 +164,8 @@
     gnomeExtensions.cpufreq
     gnomeExtensions.status-area-horizontal-spacing
     gnomeExtensions.clipboard-indicator
+    gnomeExtensions.tiling-assistant
+    gnomeExtensions.dash-to-dock
 
     # others
     gnupg
