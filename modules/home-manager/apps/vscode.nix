@@ -51,7 +51,15 @@
       "editor.defaultFormatter" = "esbenp.prettier-vscode";
       "conventionalCommits.showNewVersionNotes" = false;
       "continue.enableTabAutocomplete" = false;
+
+      #### zig
       "zig.initialSetupDone" = false;
+      "zig.formattingProvider" = "zls";
+      "zig.path" = "zig";
+      "zig.zls.checkForUpdate" = false;
+      "zig.zls.enableAutofix" = true;
+      "zig.zls.path" = "zls";
+      "zig.zls.warnStyle" = true;
 
       #### NixIDE
       "nix.enableLanguageServer" = true;

@@ -3,6 +3,9 @@
 
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-24.05";
+
+    nixpkgs-unstable.url = "github:nixos/nixpkgs/nixpkgs-unstable";
+
     auto-cpufreq = {
       url = "github:AdnanHodzic/auto-cpufreq";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -21,6 +24,7 @@
     {
       self,
       nixpkgs,
+      nixpkgs-unstable,
       home-manager,
       ...
     }@inputs:
@@ -37,6 +41,8 @@
         };
       };
 
+      unstable = import nixpkgs-unstable { inherit system; };
+
     in
     {
       nixosConfigurations = {
@@ -47,6 +53,7 @@
             inherit
               inputs
               system
+              unstable
               nixosVersion
               rootUser
               ;

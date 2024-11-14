@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ pkgs, unstable, ... }:
 {
   # List packages installed in system profile. To search, run:
   # $ nix search wget
@@ -92,8 +92,8 @@
     grub2
     musl
     clang-tools
-    zls
-    zig
+    unstable.zls
+    pkgs.zigpkgs."0.13.0"
     file
     libxcrypt
     lld
@@ -104,6 +104,7 @@
     cargo
     rustup
     rust-analyzer
+    linuxPackages_latest.perf
 
     # Official Linux Bluetooth protocol stac
     #  bluez

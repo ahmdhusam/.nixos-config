@@ -40,6 +40,7 @@
         find-hash-with-sleep = "find-hash-with-sleep() { find $1 -maxdepth 1 -type f -exec sha256sum {} \\; -exec sleep $2 \\;  }; find-hash-with-sleep";
 
         trace-io = "sudo strace -f -t -e trace=file -p "; # sudo strace -f -t -e trace=file -p 1816
+        trace-syscall = "strace --follow-forks --summary "; # strace --follow-forks --summary out.o
 
         mount-tmpram = "sudo mount -t tmpfs -o size=15G tmpfs /home/ahmed/Desktop/tmpram/";
 
