@@ -50,7 +50,6 @@
       "workbench.iconTheme" = "material-icon-theme";
       "editor.defaultFormatter" = "esbenp.prettier-vscode";
       "conventionalCommits.showNewVersionNotes" = false;
-      "continue.enableTabAutocomplete" = false;
 
       #### zig
       "zig.initialSetupDone" = false;
