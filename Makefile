@@ -1,5 +1,5 @@
 env:
-    @nix-shell shell-install.nix
+	@nix-shell shell-install.nix
 
 install:
-    @sudo nixos-rebuild switch --flake .
+	@sudo nixos-rebuild switch --flake .
