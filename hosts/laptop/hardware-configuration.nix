@@ -36,7 +36,7 @@
       "defaults"
       "noatime"
       "mode=1777"
-      "size=8G"
+      "size=12G"
     ];
   };
 
