@@ -40,7 +40,7 @@
     ripgrep # grep clone.
     w3m # A text-mode web browser.
     hwinfo # Hardware detection tool.
-    pciutils # A collection of programs for inspecting and manipulating configuration of PCI devices.
+    # pciutils # A collection of programs for inspecting and manipulating configuration of PCI devices.
     numbat # High precision scientific calculator with full support for physical units.
     nvtopPackages.full
     bat-extras.batman
@@ -50,10 +50,10 @@
     lm_sensors
     curl
     fnm # Fast and simple Node.js version manager
-    toybox # Lightweight implementation of some Unix command line utilities
-    busybox # Tiny versions of common UNIX utilities in a single small executable
-    e2fsprogs # Tools for creating and checking ext2/ext3/ext4 filesystems
-    pciutils # A collection of programs for inspecting and manipulating configuration of PCI devices
+    # toybox # Lightweight implementation of some Unix command line utilities
+    # busybox # Tiny versions of common UNIX utilities in a single small executable
+    # e2fsprogs # Tools for creating and checking ext2/ext3/ext4 filesystems
+    # pciutils # A collection of programs for inspecting and manipulating configuration of PCI devices
     fuse
 
     # ntfs
